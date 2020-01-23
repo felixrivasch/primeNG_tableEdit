@@ -13,20 +13,20 @@
             <td>
                 <p-cellEditor>
                     <ng-template pTemplate="input">
-                        <input pInputText type="text" [(ngModel)]="rowData.year" required>
+                        <input pInputText type="text" [(ngModel)]="prod.percent" required>
                     </ng-template>
                     <ng-template pTemplate="output">
-                        {{rowData.year}}
+                        {{prod.percent}}
                     </ng-template>
                 </p-cellEditor>
             </td>
             <td>
                 <p-cellEditor>
                     <ng-template pTemplate="input">
-                        <p-dropdown [options]="brands" [(ngModel)]="rowData.brand" [style]="{'width':'100%'}"></p-dropdown>
+                        <p-dropdown [options]="brands" [(ngModel)]="prod.percent" [style]="{'width':'100%'}"></p-dropdown>
                     </ng-template>
                     <ng-template pTemplate="output">
-                        {{rowData.brand}}
+                        {{prod.percent}}
                     </ng-template>
                 </p-cellEditor>
             </td>
